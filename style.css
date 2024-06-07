@@ -1,0 +1,13 @@
+:root {
+    --primary-font: "Merriweather", serif;
+    --secondary-font: "Montserrat",
+        sans-serif;
+}
+
+h1 {
+    font-family: var(--primary-font);
+}
+h2 {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
