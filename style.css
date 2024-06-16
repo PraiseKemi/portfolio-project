@@ -44,7 +44,12 @@
 .hero-section {
     background-color: var(--primary-color);
     padding: 70px 0;
+    background-image: url(/images/hero-2.png), url(/images/hero-3.png), url(/images/hero-6.png), url(/images/hero-5.png);
+    background-position: left top, right top, left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 300px, 300px, 300px, 250px;
 }
+
 
 .hero-section-space {
     padding: 70px 0;
