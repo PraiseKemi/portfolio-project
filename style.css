@@ -7,6 +7,18 @@
     --highlight-colour: #CFA86D;
 }
 
+body {
+    background: linear-gradient(90deg, hsla(211, 53%, 11%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+}
+
+.hero-section {
+    padding: 70px 0;
+    background-image: url(/images/hero-2.png), url(/images/hero-3.png), url(/images/hero-6.png), url(/images/hero-5.png), url(/images/hero-extras.svg);
+    background-position: left top, right top, left bottom, right bottom, center;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 300px, 300px, 300px, 250px, cover;
+}
+
 .hero-section h1 {
     font-family: var(--primary-font);
     font-weight: bold;
@@ -25,14 +37,16 @@
     color: white;
 }
 
-.hero-section button {
+.hero-section button, .home-about-me button {
     display: block;
     margin: 50px auto;
     padding: 15px 30px;
     border: 2px solid #CFA86D;
     border-radius: 4px;
+    font-weight: 500;
     background-color: transparent;
     color: var(--highlight-colour);
+    box-shadow: 1px 1px 10px var(--highlight-colour);
 }
 
 .hero-section button:hover, .home-about-me button:hover {
@@ -40,16 +54,6 @@
     color: white;
     transition: ease-in-out 200ms;
 }
-
-.hero-section {
-    background-color: var(--primary-color);
-    padding: 70px 0;
-    background-image: url(/images/hero-2.png), url(/images/hero-3.png), url(/images/hero-6.png), url(/images/hero-5.png), url(/images/hero-extras.svg);
-    background-position: left top, right top, left bottom, right bottom, center;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 300px, 300px, 300px, 250px, cover;
-}
-
 
 .hero-section-space {
     padding: 70px 0;
@@ -65,20 +69,48 @@
     background-size: cover;
 }
 
-.home-about-me button {
-    display: block;
-    margin: 0 auto;
-    padding: 15px 30px;
-    border: 2px solid #CFA86D;
-    border-radius: 4px;
-    background-color: transparent;
-    color: var(--highlight-colour);
+.popular-recipes {
+    background: linear-gradient(90deg, hsla(211, 53%, 11%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
 }
 
+.popular-recipes h2 {
+    font-family: var(--primary-font);
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
 
+.popular-recipes img {
+    width: 450px;
+}
+
+.popular-recipes img:hover {
+    opacity: 0.5;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 20px var(--highlight-colour);
+    transition: ease-in-out 200ms;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 
 #chef-portrait-home {
     width: 500px;
     border-radius: 15px;
-    box-shadow: 1px 1px 20px var(--highlight-colour);
+    box-shadow: 1px 1px 15px var(--highlight-colour);
+    margin-bottom: 45px;
 }
