@@ -35,7 +35,7 @@
     color: var(--highlight-colour);
 }
 
-.hero-section button:hover {
+.hero-section button:hover, .home-about-me button:hover {
     background-color: var(--highlight-colour);
     color: white;
     transition: ease-in-out 200ms;
@@ -44,14 +44,41 @@
 .hero-section {
     background-color: var(--primary-color);
     padding: 70px 0;
-    background-image: url(/images/hero-2.png), url(/images/hero-3.png), url(/images/hero-6.png), url(/images/hero-5.png);
-    background-position: left top, right top, left bottom, right bottom;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 300px, 300px, 300px, 250px;
+    background-image: url(/images/hero-2.png), url(/images/hero-3.png), url(/images/hero-6.png), url(/images/hero-5.png), url(/images/hero-extras.svg);
+    background-position: left top, right top, left bottom, right bottom, center;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 300px, 300px, 300px, 250px, cover;
 }
 
 
 .hero-section-space {
     padding: 70px 0;
     margin: 40px 0;
+}
+
+.home-about-me {
+    background-color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(/images/home-about-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home-about-me button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    border: 2px solid #CFA86D;
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--highlight-colour);
+}
+
+
+
+#chef-portrait-home {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px var(--highlight-colour);
 }
