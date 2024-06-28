@@ -75,7 +75,7 @@ body {
 
 .popular-recipes h2, .homepage-reviews h2 {
     font-family: var(--primary-font);
-    font-size: 60px;
+    font-size: 45px;
     font-weight: bold;
     color: white;
 }
@@ -109,21 +109,19 @@ body {
 }
 
 .homepage-reviews {
-    color: white;
-    font-size: 15px;
+    padding-top: 40px;
+    padding-bottom: 110px;
     font-family: var(--secondary-font);
     background-color: #1b263b;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(/images/review-section-background.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-.review-icon {
-    background: #778da9;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.homepage-reviews img {
+    width: 400px;
+    box-shadow: 1px 1px 15px white;
+    border-radius: 10px;
 }
 
 #chef-portrait-home {
@@ -133,10 +131,85 @@ body {
     margin-bottom: 45px;
 }
 
-#card-style {
-    background-color: transparent;
-    border: 1px solid var(--highlight-colour);
-    color: white;
-    box-shadow: 1px 1px 20px var(--highlight-colour);
-    max-width: 500px;
+@media (max-width:500px) {
+    .hero-section {
+        padding: 20px 0 10px;
+        background-size: 200px, 200px, 200px, 150px, cover;
+        h1 {
+        font-size: 80px;
+        }
+        h2 {
+        font-size: 20px;
+        }
+    }
+
+    .hero-section-space {
+            padding: 30px 0;
+            margin: 20px 0;
+    }
+
+    .home-about-me button {
+            margin-top: -10px;
+    }
+
+    .popular-recipes h2, .homepage-reviews h2 {
+            font-size: 30px;
+            padding: 0 20px;
+    }
+
+    .popular-recipes {
+        img {
+            width: 250px;
+            height: 300px;
+        }
+    }
+
+    .image-container {
+        display: block;
+        margin: 0 60px;
+    }
+
+    .text-overlay {
+        font-size: 20px;
+        left: 50%;
+        text-align: center;
+    }
+
+    .homepage-reviews {
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    .homepage-reviews img {
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    #chef-portrait-home {
+        width: 300px;
+        display: block;
+        margin: -15px auto 50px;
+    }
+}
+
+@media (min-width:501px) {
+    .hero-section h1 {
+        font-size: 100px;
+    }
+
+    .text-overlay {
+        font-size: 20px;
+        left: 40%;
+        top: 85%;
+    }
+
+    .popular-recipes h2, .homepage-reviews h2 {
+        font-size: 35px;
+    }
+
+    #chef-portrait-home {
+        margin: 40px auto 50px;
+    }
 }
