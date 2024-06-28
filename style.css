@@ -195,10 +195,6 @@ body {
 }
 
 @media (min-width:501px) {
-    .hero-section h1 {
-        font-size: 100px;
-    }
-
     .text-overlay {
         font-size: 20px;
         left: 40%;
