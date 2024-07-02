@@ -69,6 +69,10 @@ body {
     background-size: cover;
 }
 
+.home-about-me a {
+    text-decoration: none;
+}
+
 .popular-recipes {
     background: linear-gradient(90deg, hsla(211, 53%, 11%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
 }
@@ -150,6 +154,7 @@ body {
     font-size: 20px;
     color: white;
 }
+
 .about-me p {
     font-family: var(--secondary-font);
     font-size: 14px;
