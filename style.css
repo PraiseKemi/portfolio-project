@@ -124,11 +124,88 @@ body {
     border-radius: 10px;
 }
 
+.about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+        url(/images/home-about-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 80px;
+}
+
+.about-me {
+    max-width: 1000px;
+}
+
+.about-me h1 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 55px;
+    color: var(--highlight-colour);
+}
+
+.about-me h2 {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+.about-me p {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.5;
+    color: white;
+}
+
+.about-me-button {
+    padding: 10px 20px;
+    font-family: var(--secondary-font);
+    font-size: 15px;
+    color: var(--highlight-colour);
+    background-color: transparent;
+    border: 1px solid var(--highlight-colour);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px var(--highlight-colour);
+}
+
+.about-me-button:hover {
+    background-color: var(--highlight-colour);
+    color: white;
+    transition: ease-in-out 200ms;
+}
+
+.favourite-dishes {
+    padding: 70px 0;
+}
+
+.favourite-dishes h2 {
+    font-family: var(--primary-font);
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.favourite-dishes h3 {
+    font-size: 18px;
+    font-family: var(--secondary-font);
+    color: var(--highlight-colour);
+}
+
+.favourite-dishes img {
+    width: 400px;
+}
+
 #chef-portrait-home {
     width: 500px;
     border-radius: 15px;
     box-shadow: 1px 1px 15px var(--highlight-colour);
     margin-bottom: 45px;
+}
+
+#chef-portrait-about {
+    width: 400px;
+    border-radius: 7px;
 }
 
 @media (max-width:500px) {
@@ -186,11 +263,53 @@ body {
         margin: 0 auto;
     }
 
+    .about-me {
+        h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 12px;
+            padding: 0 15px;
+        }
+    }
+
+    .about-me-button {
+       display: block;
+       margin: 0 auto;
+    }
+
+    .favourite-dishes h3 {
+        font-size: 15px;
+    }
+
+    .favourite-dishes img {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .favourite-dishes h2 {
+        font-size: 25px;
+    }
 
     #chef-portrait-home {
         width: 300px;
         display: block;
         margin: -15px auto 50px;
+    }
+
+    #chef-portrait-about {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
     }
 }
 
