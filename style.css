@@ -124,7 +124,7 @@ body {
 
 .homepage-reviews img {
     width: 400px;
-    box-shadow: 1px 1px 15px white;
+    border: 1px solid white;
     border-radius: 10px;
 }
 
@@ -201,10 +201,59 @@ body {
     width: 400px;
 }
 
+.menu-hero {
+    padding: 140px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(/images/menu-page-header.jpg);
+}
+
+.menu-hero h1 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+}
+
+#menu-hero-standout {
+    color: var(--highlight-colour);
+}
+
+.menu-hero li {
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.menu-hero a {
+    color: var(--highlight-colour);
+    text-decoration: none;
+    border: 1px solid var(--highlight-colour);
+    padding: 5px 10px;
+    font-size: 13px;
+    font-family: var(--secondary-font);
+}
+
+.menu-hero a:hover {
+    color: white;
+    transition: ease-in-out 200ms;
+}
+
+.menu-list h2 {
+    font-family: var(--primary-font);
+    font-size: 30px;
+    color: var(--highlight-colour);
+    padding-top: 30px;
+}
+
+.menu-list p {
+    font-family: var(--secondary-font);
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+
 #chef-portrait-home {
     width: 500px;
     border-radius: 15px;
-    box-shadow: 1px 1px 15px var(--highlight-colour);
+    border: 3px solid var(--highlight-colour);
     margin-bottom: 45px;
 }
 
