@@ -250,6 +250,22 @@ body {
     color: white;
 }
 
+.menu-list-appetizers, .menu-list-main-courses, .menu-list-desserts, .menu-list-cocktails {
+    max-width: 900px;
+}
+
+.menu-list-appetizers li, .menu-list-main-courses li, .menu-list-desserts li, .menu-list-cocktails li {
+    display: block;
+    color: var(--highlight-colour);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    line-height: 2.3;
+}
+
+.menu-list-appetizers img, .menu-list-main-courses img, .menu-list-desserts img, .menu-list-cocktails img {
+    width: 550px;
+}
+
 #chef-portrait-home {
     width: 500px;
     border-radius: 15px;
