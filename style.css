@@ -163,6 +163,10 @@ body {
     color: white;
 }
 
+.about-me a {
+    text-decoration: none;
+}
+
 .about-me-button {
     padding: 10px 20px;
     font-family: var(--secondary-font);
