@@ -25,7 +25,11 @@ body {
 }
 
 .contact-details {
-    margin: 60px 0;
+    padding: 60px 0;
+}
+
+.details-section {
+    max-width: 1000px;
 }
 
 .details {
@@ -88,7 +92,7 @@ input {
     color: white;
     text-align: left;
     padding: 5px 92px;
-    margin: 20px 40px;
+    margin: 10px 0;
 }
 
 textarea {
@@ -97,11 +101,11 @@ textarea {
     color: white;
     text-align: left;
     padding: 50px 100px;
-    margin: 20px 0 -55px 18px;
+    margin: 10px 0;
 }
 
 .send-button {
-    margin: 80px 0 0 95px;
+    margin: 10px 0;
     padding: 5px 40px;
     background-color: var(--highlight-colour);
 }
@@ -109,4 +113,50 @@ textarea {
 .enquiry {
     margin: 50px 0;
     padding: 0 70px 30px;
+}
+
+@media (max-width:700px) {
+    .contact-hero {
+        padding: 100px 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .contact-hero h1 {
+        font-size: 50px;
+    }
+    
+    .contact-details {
+        margin: 0 20px;
+    }
+
+    .details {
+        border: 1px solid var(--highlight-colour);
+        margin: 20px 0;
+        padding: 0 20px;
+        line-height: 2.5;
+    }
+
+    .details h2,
+    .enquiry h2 {
+        font-size: 20px;
+    }
+
+    input {
+        text-align: left;
+        padding: 5px 70px;
+        margin: 20px 0 20px 5px;
+        }
+    
+    textarea {
+        text-align: left;
+        padding: 50px 85px;
+        margin: 20px 0 -35px 5px;
+        }
+    
+     .enquiry {
+        display: block;
+        margin-left: -55px;
+    }
 }
