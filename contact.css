@@ -145,6 +145,7 @@ textarea {
 
     .enquiry {
         display: block;
+        padding-left: 55px;
         margin-left: -55px;
     }
 
