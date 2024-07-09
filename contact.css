@@ -150,13 +150,17 @@ textarea {
 
     input {
         text-align: left;
-        padding: 5px 40px;
+        padding: 5px 50px;
         margin: 20px 0 20px 5px;
         }
     
     textarea {
         text-align: left;
-        padding: 50px 85px;
+        padding: 50px 65px;
         margin: 20px 0 -35px 5px;
+    }
+
+    .send-button {
+            margin: 50px 5px;
     }
 }
