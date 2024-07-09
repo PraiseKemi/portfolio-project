@@ -1,0 +1,25 @@
+:root {
+    --primary-font: "Merriweather", serif;
+    --secondary-font: "Montserrat",
+        sans-serif;
+    --primary-color: #0d1b2a;
+    --secondary-color: #1b263b;
+    --highlight-colour: #CFA86D;
+}
+
+body {
+    background: linear-gradient(90deg, hsla(211, 53%, 11%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+}
+
+.contact-hero {
+    padding: 200px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(/images/pork-stir-fry-with-rice-noodles-and-broccolini.jpg);
+}
+
+.contact-hero h1 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 80px;
+    color: var(--highlight-colour);
+
+}
