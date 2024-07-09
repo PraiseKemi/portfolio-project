@@ -86,6 +86,17 @@ body {
     color: white;
 }
 
+.send-button {
+    margin: 10px 0;
+    padding: 5px 40px;
+    background-color: var(--highlight-colour);
+}
+
+.enquiry {
+    margin: 50px 0;
+    padding: 0 70px 30px;
+}
+
 input {
     border: 1.5px solid var(--highlight-colour);
     background-color: transparent;
@@ -102,17 +113,6 @@ textarea {
     text-align: left;
     padding: 50px 100px;
     margin: 10px 0;
-}
-
-.send-button {
-    margin: 10px 0;
-    padding: 5px 40px;
-    background-color: var(--highlight-colour);
-}
-
-.enquiry {
-    margin: 50px 0;
-    padding: 0 70px 30px;
 }
 
 @media (max-width:700px) {
@@ -143,9 +143,14 @@ textarea {
         font-size: 20px;
     }
 
+    .enquiry {
+        display: block;
+        margin-left: -55px;
+    }
+
     input {
         text-align: left;
-        padding: 5px 70px;
+        padding: 5px 40px;
         margin: 20px 0 20px 5px;
         }
     
@@ -153,10 +158,5 @@ textarea {
         text-align: left;
         padding: 50px 85px;
         margin: 20px 0 -35px 5px;
-        }
-    
-     .enquiry {
-        display: block;
-        margin-left: -55px;
     }
 }
