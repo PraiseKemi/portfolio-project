@@ -45,12 +45,20 @@ body {
     border-radius: 4px;
     font-weight: 500;
     background-color: transparent;
-    color: var(--highlight-colour);
     box-shadow: 1px 1px 10px var(--highlight-colour);
 }
 
 .hero-section button:hover, .home-about-me button:hover {
     background-color: var(--highlight-colour);
+    transition: ease-in-out 200ms;
+}
+
+.hero-section a, .home-about-me a {
+    color: var(--highlight-colour);
+    text-decoration: none;
+}
+
+.hero-section a:hover, .home-about-me a:hover {
     color: white;
     transition: ease-in-out 200ms;
 }
@@ -67,10 +75,6 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(/images/home-about-background.jpg);
     background-position: center;
     background-size: cover;
-}
-
-.home-about-me a, .hero-section a {
-    text-decoration: none;
 }
 
 .popular-recipes {
@@ -165,13 +169,18 @@ body {
 
 .about-me a {
     text-decoration: none;
+    color: var(--highlight-colour);
+}
+
+.about-me a:hover {
+    color: white;
+    transition: ease-in-out 200ms;
 }
 
 .about-me-button {
     padding: 10px 20px;
     font-family: var(--secondary-font);
     font-size: 15px;
-    color: var(--highlight-colour);
     background-color: transparent;
     border: 1px solid var(--highlight-colour);
     border-radius: 4px;
@@ -180,7 +189,6 @@ body {
 
 .about-me-button:hover {
     background-color: var(--highlight-colour);
-    color: white;
     transition: ease-in-out 200ms;
 }
 
@@ -230,8 +238,12 @@ body {
     }
 
     .hero-section-space {
-        padding: 30px 0;
         margin: 20px 0;
+    }
+
+    .home-about-me p {
+        margin: 0 auto;
+        padding: 20px;
     }
 
     .home-about-me button {
