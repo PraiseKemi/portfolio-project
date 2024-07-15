@@ -115,6 +115,24 @@ textarea {
     margin: 10px 0;
 }
 
+nav {
+    background-color: var(--highlight-colour);
+}
+
+nav a {
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-container {
+    margin: 0 20px;
+}
+
+#navbarNav {
+    justify-content: end;
+}
+
 @media (max-width:700px) {
     .contact-hero {
         padding: 100px 0;
@@ -163,5 +181,9 @@ textarea {
 
     .send-button {
             margin: 50px 5px;
+    }
+
+    .nav-container {
+        margin: 0;
     }
 }

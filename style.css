@@ -50,7 +50,7 @@ body {
 
 .hero-section button:hover, .home-about-me button:hover {
     background-color: var(--highlight-colour);
-    transition: ease-in-out 200ms;
+    transition: ease-in-out 100ms;
 }
 
 .hero-section a, .home-about-me a {
@@ -225,6 +225,24 @@ body {
     border-radius: 7px;
 }
 
+nav {
+    background-color: var(--highlight-colour);
+}
+
+nav a {
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-container {
+    margin: 0 20px;
+}
+
+#navbarNav {
+    justify-content: end;
+}
+
 @media (max-width:500px) {
     .hero-section {
         padding: 20px 0 10px;
@@ -331,6 +349,10 @@ body {
         width: 300px;
         display: block;
         margin: 0 auto;
+    }
+
+    .nav-container {
+        margin: 0;
     }
 }
 
