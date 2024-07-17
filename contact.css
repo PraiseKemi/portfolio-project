@@ -213,4 +213,9 @@ nav a {
     .nav-container {
         margin: 0;
     }
+
+    .closing-line {
+        font-size: 12px;
+        margin: 20px 0;
+    }
 }
