@@ -188,6 +188,29 @@ footer .btn a:hover {
     color: var(--primary-color);
 }
 
+.closing-line {
+    font-family: var(--secondary-font);
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--highlight-colour);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.closing-line a {
+    color: white;
+}
+
+.closing-line a:hover {
+    color: aqua;
+    transition: all 100ms ease-in-out;
+}
+
+.closing-line a:visited {
+    color: white;
+}
+
 @media (max-width:900px) {
     .menu-hero h1 {
         font-size: 40px;
