@@ -174,6 +174,7 @@ nav a {
     
     .contact-details {
         margin: 0 20px;
+        padding: 0;
     }
 
     .details {
@@ -192,6 +193,7 @@ nav a {
         display: block;
         padding-left: 55px;
         margin-left: -55px;
+        margin-bottom: 0;
     }
 
     input {
@@ -209,7 +211,7 @@ nav a {
     .send-button {
             margin: 50px 5px;
             padding: 0 2px;
-            width: 20%;
+            width: 25%;
     }
 
     .nav-container {
